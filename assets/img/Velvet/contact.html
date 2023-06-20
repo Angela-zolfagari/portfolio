@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+
+
+body{
+    margin:0 ;
+
+}
+#container{
+    width:90vw;
+    margin:0 auto;
+}
+        /* ------------social media icons---------*/
+        #icons {
+            position: relative;
+           top:15px;
+            z-index: 2000;
+           
+        }
+
+        #icons li {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+        }
+
+        .icon {
+            margin-top: -95px;
+            padding: 0px;
+            display: flex;
+            position: relative;
+            float: left;
+        }
+
+        /*-------------Menu-----------*/
+        ul.menu {
+            list-style-type: none;
+            
+            padding-top: 0px;
+           padding-left:320px;
+           padding-right: 150px;
+            margin:0 auto;
+            /* margin-right: 300px; */
+            height: 65px;
+            width:58vw;
+            z-index: 1000;
+            background-color: white;
+            border-bottom-style: double;
+        }
+
+        ul li:hover {
+            color: rgb(44, 39, 71);
+        }
+ul li{
+    display:inline-block;
+}
+        ul li a {
+            text-decoration: none;
+            color: rgb(44, 39, 71);
+            font-size: 18px;
+            padding: 20px;
+            display: inline-block;
+            background: white;
+        }
+
+        /* ----------- dropdown menu ----------- */
+        ul.dropdown-content {
+            position: absolute;
+            list-style-type: none;
+            padding-left: 10px;
+            display: none;
+            background: white;
+            border: 1px solid lightgray;
+            padding: 20px;
+        }
+
+        li.dropdown-item:hover ul.dropdown-content {
+            display: block;
+            cursor: pointer;
+        }
+
+
+
+.contact{
+    margin-left:700px;
+    list-style: none;border :1px solid gray ;padding-bottom: 15px;padding-left: 10px;margin-right: 150px;
+}
+h3{ font-size: 30px;font-family: 'Times New Roman', Times, serif; color: rgb(37, 37, 97);padding-left: 10px;}
+
+#call,#email,#address{
+    position:relative;
+    top:10px;padding-right: 10px;
+
+}
+
+#map{ width:410px;
+    max-width: 100%;
+    height:300px; 
+    margin-left: 700px;
+    border: 1px solid gray;
+    position: relative;
+    margin-top: 20px;
+}
+#agent{
+    margin-top: -500px;float: left;margin-left: 50px;position: relative;margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="home.html">HOME</a></li>
+         <li class="dropdown-item">
+             <a href="Recipes.html">RECIPES</a>
+               <ul class="dropdown-content">
+                 <li>Breakfast<a href="#"></a></li>
+                 <li>Dinner<a href="#"></a></li>
+                 <li>Snacks<a href="#"></a></li>
+                 <li>Desserts<a href="#"></a></li>
+                 <li>Coctails<a href="#"></a></li>
+                 <li>Baking<a href="#"></a></li>
+                 
+             </ul>
+             </li>
+             <li class="dropdown-item">
+                 <a href="#">SHOP</a>
+                 <ul class="dropdown-content">
+                     <li>School snack package<a href="#"></a></li>
+                     <li>Cheese Tray <a href="#"></a></li>
+                     <li>Healthy Side package<a href="#"></a></li>
+                 </ul>
+                 </li>
+                  
+              <li><a href="About.html">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul id="icons">
+         <li>
+             <a href="#" class="icon" title="Linkedin" ><img width="30px" height="30px"; src="./images/social-media-icons/linkedin.png" alt=""></a>
+         </li>
+         <li>
+             <a href="#" class="icon" title="Facebook"><img width="30px" height="30px"; src="./images/social-media-icons/f2.png" alt=""></a>
+         </li>
+         <li>
+             <a href="#" class="icon" title="Twitter" ><img width="30px" height="30px"; src="./images/social-media-icons/tweeter.png" alt=""></a>
+         </li>
+         <li>
+             <a href="#" class="icon" title="Instagram"><img width="30px" height="30px"; src="./images/social-media-icons/instagram2.png" alt=""></a>
+         </li>
+       </ul>
+
+ 
+ 
+<div class="contact">
+    <h3>Meet Us</h3>
+    <ul>
+     <li><img id="call" width="30px" height="30px" src="./images/call.jpg" alt=""> (+1) 604)7266655</li> 
+     <li> <img id="email" width="30px" height="30px" src="./images/email.jpg" alt=""> Velvet.Kitchen@gmail.com</li>
+      <li> <img id="address" width="30px" height="30px" src="./images/address.jpg" alt=""> 677 Thurlow Street,Vancouver,BC,Canada</li>
+    </ul>
+</div>
+<div id="map">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2602.4798820502187!2d-123.121427!3d49.286252!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1644429628895!5m2!1sen!2sca" width="410" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+</div>
+
+<img id="agent" width="320px" height="500px" src="./images/agent-g7bf594aca_1920.jpg" alt="agent">
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Home</title>
+    <style>
+  
+    
+/* ------------social media icons---------*/
+       #icons{position: fixed; z-index: 4000; }
+       #icons li { text-decoration: none;
+          list-style: none;display: inline-block;
+          }
+       
+       .icon { margin-top: 0px; padding: 0px ;display: flex; 
+           position: relative; }  
+ 
+/*-------------Menu-----------*/
+    ul.menu{
+       list-style-type: none;  
+       padding-left: 40%;
+       padding-top: 15px;
+       display: flex;
+       margin-top: -20px;
+       
+       height: 65px;
+       width: 100%;
+       z-index: 1000;
+       float: left;
+       background-color: white;
+       position: fixed;
+       overflow-x: auto;
+       border-bottom-style: double;}
+       
+    ul li:hover{
+      color: rgb(44, 39, 71);
+    }
+    ul li a{
+       text-decoration: none;
+       color:rgb(44, 39, 71);
+       font-size: 18px;
+       padding:20px;
+       display: inline-block;
+       background:white; 
+    }
+/* ----------- dropdown menu ----------- */
+    ul.dropdown-content{
+       position: absolute;
+       list-style-type: none;
+       padding: 20px;
+       display: none;
+       background: white;
+       border: 1px  solid lightgray;
+    }
+    li.dropdown-item:hover ul.dropdown-content{
+       display:block;cursor:pointer;
+    }
+    
+
+
+   .logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+top: 80%;
+
+padding-top: 150px;
+ }
+
+
+/*------ slider-pics------ */
+    .slide-container {
+         width: 100%;
+         height:500px; 
+         display:flex; 
+         overflow-x: auto;
+          margin-top: 200px;
+         scroll-snap-points-x: repeat(600px);
+         scroll-snap-type:mandatory; }
+    .slider-image { width: 500px; flex-shrink: 0; height: 100%; margin: 15px;}
+  
+   
+#tagline {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+
+}
+     
+
+
+    </style>
+</head>
+<body>
+  
+    <ul class="menu">
+       <li><a href="home.html">HOME</a></li>
+        <li class="dropdown-item">
+            <a href="Recipes.html">RECIPES</a>
+              <ul class="dropdown-content">
+                <li>Breakfast<a href="#"></a></li>
+                <li>Dinner<a href="#"></a></li>
+                <li>Snacks<a href="#"></a></li>
+                <li>Desserts<a href="#"></a></li>
+                <li>Coctails<a href="#"></a></li>
+                <li>Baking<a href="#"></a></li>
+                
+            </ul>
+            </li>
+            <li class="dropdown-item">
+                <a href="#">SHOP</a>
+                <ul class="dropdown-content">
+                    <li>School snack package<a href="#"></a></li>
+                    <li>Cheese Tray <a href="#"></a></li>
+                    <li>Healthy Side package<a href="#"></a></li>
+                </ul>
+                </li>
+                 
+             <li><a href="About.html">ABOUT</a></li>
+             <li><a href="contact.html">CONTACT</a></li>
+     </ul>
+     <ul id="icons">
+        <li>
+            <a href="#" class="icon" title="Linkedin" ><img width="30px" height="30px"; src="./images/social-media-icons/linkedin.png" alt=""></a>
+        </li>
+        <li>
+            <a href="#" class="icon" title="Facebook"><img width="30px" height="30px"; src="./images/social-media-icons/f2.png" alt=""></a>
+        </li>
+        <li>
+            <a href="#" class="icon" title="Twitter" ><img width="30px" height="30px"; src="./images/social-media-icons/tweeter.png" alt=""></a>
+        </li>
+        <li>
+            <a href="#" class="icon" title="Instagram"><img width="30px" height="30px"; src="./images/social-media-icons/instagram2.png" alt=""></a>
+        </li>
+</ul>
+
+   
+
+     <img id="logo" width="500px" height="100px" src="./images/LOGO.png" alt="logo" class="logo" >
+
+     <div class="slide-container">
+            <img id="burger" src="./images/slider-images/burger.jpg" class="slider-image">
+            <img  id="appetizer" src="./images/slider-images/appetizer.jpg" class="slider-image">
+            <img id="cake" src="./images/slider-images/cake.jpg" class="slider-image">
+            <img id="dinner" src="./images/slider-images/dinner.jpg" class="slider-image">
+            <img id="thanks" src="./images/slider-images/thanks giving dinner.jpg" class="slider-image">
+     </div>
+  </div>
+
+<img  id="tagline" width="600px" height="130px" src=  "./images/tagline.png" alt="">
+
+
+    </body>
+</html>

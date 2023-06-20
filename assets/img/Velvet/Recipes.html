@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepies</title>
+    <style>
+        body {
+            margin: 0% auto
+        }
+
+        /* ------------social media icons---------*/
+        #icons {
+            position: fixed;
+            z-index: 2000;
+        }
+
+        #icons li {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+        }
+
+        .icon {
+            margin-top: 0px;
+            padding: 0px;
+            display: flex;
+            position: relative;
+        }
+
+        /*-------------Menu-----------*/
+        ul.menu {
+            list-style-type: none;
+            padding-left: 400px;
+            padding-top: 0px;
+            display: flex;
+            margin-top: 0px;
+            margin-right: 300px;
+            height: 65px;
+            width: 100%;
+            z-index: 1000;
+            float: left;
+            background-color: white;
+            position: fixed;
+            border-bottom-style: double;
+        }
+
+        ul li:hover {
+            color: rgb(49, 44, 82);
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(52, 47, 85);
+            font-size: 18px;
+            padding: 20px;
+            display: inline-block;
+            background: white;
+        }
+
+        /* ----------- dropdown menu ----------- */
+        ul.dropdown-content {
+            position: absolute;
+            list-style-type: none;
+            padding-left: 10px;
+            display: none;
+            background: white;
+            border: 1px solid lightgray;
+            padding: 20px;
+        }
+
+        li.dropdown-item:hover ul.dropdown-content {
+            display: block;
+            cursor: pointer;
+        }
+
+
+        /*------------ recipes----------------*/
+        .recipe {
+            float: left;
+            margin-left: 80px;
+            margin-right: 50px;
+            position: relative;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        /*-----captions top of pics-----*/
+        .caption ul {
+            position: absolute;
+            top: 10px;
+            text-align: left;
+            left: 0px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            list-style: none;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            margin-top: 0px;
+            padding-top: 150px;
+            color: rgb(43, 43, 95);
+        }
+
+        h2 a {
+            text-decoration: none;
+            position: relative;
+            color: rgb(43, 43, 95);
+        }
+
+
+        h4 {
+            text-align: right;
+            position: relative;
+            margin-top: 0%;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+        h4 a {
+            text-decoration: none;
+            color: rgb(43, 43, 95);
+        }
+
+        h3 {
+            margin: 0%;
+            padding: 0%;
+            position: absolute;
+            color: rgb(43, 43, 95);
+            display: flex;
+            padding-left: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <ul class="menu">
+        <li><a href="home.html">HOME</a></li>
+        <li class="dropdown-item">
+            <a href="Recipes.html">RECIPES</a>
+            <ul class="dropdown-content">
+                <li><a href="Breackfast.html">Breakfast</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="Snacks.html">Snacks</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="Coctails.html">Coctails</a></li>
+                <li><a href="Baking.html">Baking</a></li>
+
+            </ul>
+        </li>
+        <li class="dropdown-item">
+            <a href="#">SHOP</a>
+            <ul class="dropdown-content">
+                <li>School snack package<a href="#"></a></li>
+                <li>Cheese Tray <a href="#"></a></li>
+                <li>Healthy Side package<a href="#"></a></li>
+            </ul>
+        </li>
+
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <ul id="icons">
+        <li>
+            <a href="https://www.linkedin.com/in/angela-zolfagari" class="icon" title="Linkedin"><img width="30px"
+                    height="30px" ; src="./images/social-media-icons/linkedin.png" alt=""></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/angela.zolfagari" class="icon" title="Facebook"><img width="30px"
+                    height="30px" ; src="./images/social-media-icons/f2.png" alt=""></a>
+        </li>
+        <li>
+            <a href="#" class="icon" title="Twitter"><img width="30px" height="30px" ;
+                    src="./images/social-media-icons/tweeter.png" alt=""></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/angela.z.hairstyle" class="icon" title="Instagram"><img width="30px"
+                    height="30px" ; src="./images/social-media-icons/instagram2.png" alt=""></a>
+        </li>
+    </ul>
+    <h1>RECIPES</h1>
+    
+    <hr>
+    <div id="recipes">
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/mussels.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul class="caption">
+                    <li>Prep: 10 min</li>
+                    <li>Cook: 10 min</li>
+                    <li>Ready In: 20 min</li>
+                    <li>Level : Difficult</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="Appetizer Mussels.html">Appetizer Mussels </a></h2>
+            <hr>
+            <h3>50 min </h3>
+            <h4><a href="#">Dinner</a> </h4>
+            <hr>
+        </div>
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/bean-salad.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul>
+                    <li>Prep: 15 min </li>
+                    <li>Cook: 1 h</li>
+                    <li>Ready In: 2 h 15 m</li>
+                    <li>Level : Difficult</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="Bean Salad With Celery.html">Bean Salad With Celery </a></h2>
+            <hr>
+            <h3>3 h </h3>
+            <h4><a href="#">Dinner</a> </h4>
+            <hr>
+        </div>
+
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/cheese.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul>
+                    <li>Prep: 10 min</li>
+                    <li>Cook: 30 min</li>
+                    <li>Ready In: 40 min</li>
+                    <li>Level : Average</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="#">Beer Cheese Dip </a></h2>
+            <hr>
+            <h3>60 min</h3>
+            <h4><a href="#">Baking</a> </h4>
+            <hr>
+        </div>
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/apple-cider.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul>
+                    <li>Prep: 5 min</li>
+                    <li>Cook: 5 min</li>
+                    <li>Ready In: 5 min</li>
+                    <li>Level : Difficult</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="#">Apple Cider </a></h2>
+            <hr>
+            <h3>45 min</h3>
+            <h4><a href="#">Breakfast</a> </h4>
+            <hr>
+        </div>
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/burger.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul>
+                    <li>Prep: 10 min</li>
+                    <li>Cook: 40 min</li>
+                    <li>Ready In: 50 min</li>
+                    <li>Level : Average</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="#">Brontosaurus Burgers </a></h2>
+            <hr>
+            <h3>50 min</h3>
+            <h4><a href="#">Dinner</a> </h4>
+            <hr>
+        </div>
+        <div class="recipe">
+            <img width="500px" height="300px" ; src="./images/recepies/cherry-pie.jpg" alt="">
+            <div class="caption">
+                <p>
+                <ul>
+                    <li>Prep: 30 min</li>
+                    <li>Cook: 45 min</li>
+                    <li>Ready In: 3 h</li>
+                    <li>Level : Difficult</li>
+                </ul>
+                </p>
+            </div>
+
+            <h2><a href="#">Cherry Pie </a></h2>
+            <hr>
+            <h3>3 h</h3>
+            <h4><a href="#">Baking</a> </h4>
+            <hr>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
